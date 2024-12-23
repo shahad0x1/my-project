@@ -1,0 +1,43 @@
+
+.btn-green {
+    background-color: #006400; /* الأخضر الداكن */
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #004d00; /* لون أغمق عند التمرير */
+    color: white;
+}
+
+/* تأثير عند تمرير الماوس */
+.custom-card:hover {
+    transform: scale(1,1); /* تكبير الكارد قليلاً */
+    box-shadow: 0px 10px 20px rgba(77, 46, 46, 0.2); /* تكبير الظل */
+}
+
+.card:hover{
+    box-shadow: 8px 8px 8px grey;
+    transform: scale(1,1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* الخط الفاصل بين الكاردات */
+.custom-card + .custom-card {
+    border-top: 2px solid #ccc; /* خط بين الكاردات */
+    padding-top: 20px; /* مسافة فوق الكارد الجديد */
+    margin-top: 20px; /* مسافة إضافية بين الكاردات */
+}
+
+/* تخصيص الزر الأخضر */
+.btn-green {
+    background-color: #006400; /* أخضر داكن */
+    color: white;
+    border-radius: 5px; /* حواف الزر */
+    padding: 10px 20px; /* تكبير الزر */
+}
+
+.btn-green:hover {
+    background-color: #004d00; /* لون أغمق عند التمرير */
+    color: white;
+}

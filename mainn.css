@@ -1,0 +1,27 @@
+/* لتغيير لون نص Free Cancellation */
+.free-cancellation {
+    color: green;
+    font-weight: bold;
+}
+
+/* تحسين شكل الحدود الفاصلة */
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+/* تحسين شكل النجوم */
+.text-warning i {
+    margin-right: 2px;
+}
+.hotel-card {
+    transition: transform 0.8s ease, box-shadow 0.8s ease; /* تأثير الحركة والظل */
+}
+
+/* التأثير عند التمرير بالماوس */
+.hotel-card:hover {
+   
+        box-shadow: 8px 8px 8px grey;
+        transform: scale(1,1);
+        border-radius: 10px;
+        padding: 10px;
+    }
