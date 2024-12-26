@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="stylesheet" href="iban.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBAN Checker</title>
+    <link rel="stylesheet" href="iban.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IBAN CHECKER</h1>
+        <input type="text" id="ibanInput" placeholder="Enter your IBAN here..." />
+        <button onclick="checkIban()">CHECK!</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script>
+        function checkIban() {
+            const ibanInput = document.getElementById('ibanInput').value.trim();
+            const resultDiv = document.getElementById('result');
+
+            if (ibanInput.length !== 22) {
+                resultDiv.innerHTML = '<p style="color: red;">Invalid IBAN!</p>';
+            } else {
+                resultDiv.innerHTML = '<p style="color: green;">IBAN is valid!</p>';
+            }
+        }
+    </script>
+</body>
+</html>
